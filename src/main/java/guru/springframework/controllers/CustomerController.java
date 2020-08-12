@@ -52,7 +52,6 @@ public class CustomerController {
 
     @RequestMapping(method = RequestMethod.POST)
     public String saveOrUpdate(Customer customer) {
-
         Customer savedCustomer = customerService.saveOrUpdate(customer);
 
         //Redirecciona a URL
